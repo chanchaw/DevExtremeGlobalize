@@ -30,20 +30,24 @@ import "devextreme/localization/globalize/message";
 import deMessages from "devextreme/localization/messages/de.json";
 import ruMessages from "devextreme/localization/messages/ru.json";
 import zhMessages from "devextreme/localization/messages/zh.json";
+import jaMessages from "devextreme/localization/messages/ja.json";
+
 import supplemental from "devextreme-cldr-data/supplemental.json";
 import deCldrData from "devextreme-cldr-data/de.json";
 import ruCldrData from "devextreme-cldr-data/ru.json";
 import zhCldrData from "devextreme-cldr-data/zh.json";
+import jaCldrData from "devextreme-cldr-data/ja.json";
  
 import Globalize from "globalize";
  
 Globalize.load(
-    supplemental, deCldrData, ruCldrData,zhCldrData
+    supplemental, deCldrData, ruCldrData,zhCldrData,jaCldrData
 );
  
 Globalize.loadMessages(deMessages);
 Globalize.loadMessages(ruMessages);
 Globalize.loadMessages(zhMessages);
+Globalize.loadMessages(jaMessages);
  
 Globalize.locale(navigator.language);
 // 国际化代码结束
